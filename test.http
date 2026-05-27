@@ -1,0 +1,23 @@
+### Register
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "username": "anjan3",
+  "email": "anjan3@gmail.com",
+  "password": "password123"
+}
+
+### Login
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "username": "anjan2",
+  "password": "password123"
+}
+
+### Get all posts (public - no token)
+GET http://localhost:8080/posts
+
+### Create post (needs token)
